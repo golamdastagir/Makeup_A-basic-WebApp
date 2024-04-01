@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <title>Makeup Collection :: Reviews</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial scale= 1.0" />
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header>
+        <a href="index.html">
+          <img src="logo.png" alt="logo" id="logo" />
+        </a>
+      </header>
+
+      <nav id="nav_media">
+        <ul>
+          <li><a href="about.html"> ABOUT </a></li>
+          <li>
+            <a href="#"> SHOP </a>
+            <ul>
+              <li><a href="face.html">Face</a></li>
+              <li><a href="lip.html">Lips</a></li>
+              <li><a href="eye.html">Eyes</a></li>
+            </ul>
+          </li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="review.html"> REVIEWS </a></li>
+          <li><a href="contact.html"> CONTACTS </a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <h1 style="text-align: center" id="hedin1">Review this page</h1>
+        <h3 style="margin-bottom: 60px; text-align: center">
+          Fill your name then share your experience and thoughts about this page
+          also feel free to sugggest any change.
+        </h3>
+        <div>
+          <div class="container">
+            <div id="form">
+              <div id="row">
+                <div class="col25">
+                  <label for="myName">Full Name:</label>
+                </div>
+
+                <div class="col75">
+                  <input
+                    type="text"
+                    name="myName"
+                    id="myName"
+                    required="required"
+                    placeholder="Your Name"
+                  />
+                </div>
+              </div>
+
+              <div id="row2">
+                <div class="col25">
+                  <label for="myComments">Comments:</label>
+                </div>
+                <div class="col75">
+                  <textarea
+                    name="myComments"
+                    id="myComments"
+                    required
+                    rows="3"
+                    cols="40"
+                  ></textarea>
+                </div>
+              </div>
+              <input type="submit" value="Submit" id="sbm" />
+            </div>
+          </div>
+        </div>
+        <div id="pop" style="display: none">
+          <h2 style="text-align: center; font-size: 400%">
+            Thank you for reviewing.
+          </h2>
+          <p>Your comment is being showed below.</p>
+        </div>
+        <h4 id="hiddenname"></h4>
+        <h5 id="hiddencomment"></h5>
+      </main>
+
+      <footer>
+        <div class="footertop">
+          <div>
+            <a href="index.html"> Home </a> &nbsp;
+            <a href="about.html"> About </a>&nbsp;
+            <a href="faq.html"> FAQ </a>&nbsp;
+            <a href="review.html"> Reviews </a>&nbsp;
+            <a href="contact.html"> Contacts </a>
+          </div>
+
+          <section>
+            <h6>
+              <a href="https://www.facebook.com/golamdastagirbarish/"
+                ><img
+                  src="facebook.png"
+                  alt="facebook"
+                  width="25"
+                  style="margin-right: 1.5em"
+              /></a>
+            </h6>
+          </section>
+          <section>
+            <h6>
+              <a href="https://www.instagram.com/golamdastagirbarish/"
+                ><img
+                  src="instagram.png"
+                  alt="instagram"
+                  width="25"
+                  style="margin-right: 1.5em"
+              /></a>
+            </h6>
+          </section>
+          <section>
+            <h6>
+              <a href="mailto:golamdastagirbarish@gmail.com"
+                ><img
+                  src="mail.png"
+                  alt="mail"
+                  width="25"
+                  style="margin-right: 1.5em"
+              /></a>
+            </h6>
+          </section>
+        </div>
+
+        <div id="footer">
+          Copyright &copy; 2019 | All Rights Reserved by Makeup Collection
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript">
+      var btn = document.getElementById("sbm");
+      var pop = document.getElementById("pop");
+      var form = document.getElementById("form");
+      var nam = document.getElementById("myName");
+      var hnam = document.getElementById("hiddenname");
+      var hcmnt = document.getElementById("hiddencomment");
+      var cmnt = document.getElementById("myComments");
+
+      btn.onclick = function asd() {
+        pop.style.display = "initial";
+        form.style.display = "none";
+        var ourDataN = nam.value;
+        var ourDataC = cmnt.value;
+        renderHTMLN(ourDataN);
+        renderHTMLC(ourDataC);
+      };
+
+      function renderHTMLN(Data) {
+        var string = "";
+        string += "<p>" + Data + "</p>";
+        hnam.insertAdjacentHTML("beforeend", string);
+      }
+
+      function renderHTMLC(Data) {
+        var string = "commented,";
+        string += "<p>" + Data + ".</p>";
+        hcmnt.insertAdjacentHTML("beforeend", string);
+      }
+    </script>
+  </body>
+</html>
