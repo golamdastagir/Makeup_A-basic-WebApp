@@ -1,9 +1,58 @@
-# [Makeup (Click to see Demo)](https://golamdastagir.github.io/Makeup-A-basic-WebApp-/)
-### Following my acquisition of proficiency in HTML and CSS, I embarked on a personal endeavor to develop a compact web application project entitled "Makeup
+# 💄 Makeup — A Basic E-commerce
+A beginner-friendly web project built using **HTML**, **CSS**, and a touch of **JavaScript** — designed as a simple multi-page makeup brand site.
 
-## Note: 
-### 1. The About page is generated casually with Lorem Ipsum and random internet images.
-### 2. Shop page 3 sections with 3 products each as a show.
-### 3. FAQ is taken randomly from templates.
-### 4. Review page has a slight touch of JS that just shows your input in a showcase manner.
-### 5. Contact page is just a form page.
+
+## 🌐 Live Demo
+
+👉 [Click here to visit the live site](https://golamdastagir.github.io/Makeup-A-basic-WebApp-/)
+
+
+## 📦 What's Inside?
+
+🧾 **About**  
+- Placeholder content generated with **Lorem Ipsum**  
+- Images sourced randomly from the web
+
+🛍️ **Shop**  
+- 3 sections featuring 3 showcase products each  
+- Purely static for display purposes
+
+❓ **FAQ**  
+- Sample questions and answers pulled from common UI templates
+
+⭐ **Reviews**  
+- Allows users to input and display reviews dynamically using JavaScript
+
+📬 **Contact**  
+- A simple contact form layout (no backend submission)
+
+
+## 🛠️ Technologies Used
+
+- **HTML5**  
+- **CSS3**  
+- **Bootstrap** (for styling and layout)  
+- **JavaScript (vanilla)** – minimal use in the Reviews section
+
+
+## ✨ Purpose
+
+This project was built as a **personal practice** exercise after gaining foundational skills in HTML and CSS. It helped explore page structuring, styling, layout techniques, and simple DOM manipulation.
+
+
+## 📸 Preview
+
+> _You can explore each page from the demo site to get a full visual overview._
+
+
+## 📌 Notes
+
+1. Content is placeholder-based and intended for demo only.
+2. No backend or product cart integration — it's a front-end showcase.
+3. JavaScript is used only in the Review page for dynamic feedback display.
+
+
+## 👨‍💻 Developer
+
+Made by [Golam Dastagir](https://github.com/golamdastagir)
+
