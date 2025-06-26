@@ -4,7 +4,7 @@ A beginner-friendly web project built using **HTML**, **CSS**, and a touch of **
 
 ## 🌐 Live Demo
 
-👉 [Click here to visit the live site](https://golamdastagir.github.io/Makeup-A-basic-WebApp-/)
+👉 [Click here to visit the live site](https://golamdastagir.github.io/Makeup_A-basic-E-commerce/)
 
 
 ## 📦 What's Inside?
